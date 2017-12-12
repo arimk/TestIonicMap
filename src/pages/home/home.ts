@@ -58,7 +58,7 @@ export class HomePage {
       }
     };
 
-    this.map = new GoogleMap(this.mapElement, mapOptions);
+    this.map = GoogleMaps.create('map', mapOptions);
 
     this.map.one(GoogleMapsEvent.MAP_READY)
     .then(() => {
